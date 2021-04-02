@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Box, Button } from "@material-ui/core";
+import { Typography, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -87,7 +87,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: "tomato",
     padding: "3rem 0",
     textTransform: "uppercase",
   },

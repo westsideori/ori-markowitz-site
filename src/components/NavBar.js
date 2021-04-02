@@ -15,7 +15,6 @@ import {
   Drawer,
 } from "@material-ui/core";
 import {
-  ArrowBack,
   AssignmentInd,
   Home,
   Apps,
@@ -26,6 +25,7 @@ import {
 import { makeStyles } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import avatar from "../oripic1.jpeg";
+import Footer from "./Footer";
 
 const useStyles = makeStyles((theme) => ({
   menuContainer: {
@@ -110,6 +110,7 @@ const NavBar = () => {
               anchor="left"
             >
               {sideBar("left")}
+              <Footer />
             </Drawer>
             <Toolbar>
               <IconButton onClick={() => toggleSideBar("left", true)}>
