@@ -6,7 +6,6 @@ import {
 } from "@material-ui/core";
 import GitHub from "@material-ui/icons/GitHub";
 import LinkedIn from "@material-ui/icons/LinkedIn";
-import Medium from "../medium.svg";
 import Book from "@material-ui/icons/Book";
 
 const useStyles = makeStyles({
@@ -31,7 +30,7 @@ const Footer = () => {
         <BottomNavigationAction
           className={classes.root}
           style={{ padding: 0 }}
-          icon={<GitHub />}
+          icon={<GitHub style={{ color: "#00838f" }} />}
         />
       </a>
 
@@ -43,7 +42,7 @@ const Footer = () => {
         <BottomNavigationAction
           className={classes.root}
           style={{ padding: 0 }}
-          icon={<LinkedIn />}
+          icon={<LinkedIn style={{ color: "#00838f" }} />}
         />
       </a>
       <a
@@ -54,7 +53,7 @@ const Footer = () => {
         <BottomNavigationAction
           className={classes.root}
           style={{ padding: 0 }}
-          icon={<Book />}
+          icon={<Book style={{ color: "#00838f" }} />}
         />
       </a>
     </BottomNavigation>

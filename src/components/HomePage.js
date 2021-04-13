@@ -8,9 +8,13 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(15),
     margin: theme.spacing(1),
   },
-  title: {},
+  title: {
+    color: "#00838f",
+    fontWeight: "500",
+  },
   subtitle: {
-    marginBottom: "3rem",
+    // marginBottom: "3rem",
+    color: "#0097a7",
   },
   infoContainer: {
     position: "absolute",

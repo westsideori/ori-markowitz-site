@@ -4,6 +4,16 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {},
+  venueName: {
+    color: "#00acc1",
+    fontWeight: "500",
+    fontSize: "1.2rem",
+  },
+  caption: {
+    fontStyle: "italic",
+    color: "#006064",
+    fontWeight: "500",
+  },
   timeLine: {
     position: "relative",
     padding: "1rem",
@@ -12,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       height: "100%",
-      border: "1px solid tan",
+      border: "1px solid #00bcd4",
       right: "40px",
       top: 0,
     },
@@ -31,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   timeLineItem: {
     padding: "1rem",
-    borderBottom: "2px solid tan",
+    borderBottom: "2px solid #00bcd4",
     position: "relative",
     margin: "1rem 3rem 1rem 1rem",
     clear: "both",
@@ -45,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "tomato tomato transparent transparent",
+      borderColor: "#00bcd4 #00bcd4 transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
@@ -55,22 +65,25 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n)": {
         float: "right",
         margin: "1rem",
-        borderColor: "tan",
+        borderColor: "#00bcd4",
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
-        borderColor: "transparent transparent tomato tomato",
+        borderColor: "transparent transparent #00bcd4 #00bcd4",
       },
     },
   },
   timeLineYear: {
+    backgroundColor: "#00bcd4",
+    color: "white",
     textAlign: "center",
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
-    fontSize: "1.8rem",
+    fontSize: "1.5rem",
+    fontWeight: "400",
     lineHeight: 1,
-    padding: "0.5rem 0 1rem",
+    padding: "0.5rem 0 ",
     "&:before": {
       display: "none",
     },
@@ -89,10 +102,14 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     padding: "3rem 0",
     textTransform: "uppercase",
+    color: "#00838f",
+    fontWeight: "500",
   },
   subHeading: {
     padding: "0",
     textTransform: "uppercase",
+    color: "#006064",
+    fontSize: "1.2rem",
   },
 }));
 
@@ -102,9 +119,44 @@ const Resume = () => {
   return (
     <Box className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
-        Experience
+        Resume
       </Typography>
       <Box className={classes.timeLine}>
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        >
+          2020-2021
+        </Typography>
+        <Box className={classes.timeLineItem}>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Full-Stack Software Engineering Student - New York, NY
+          </Typography>
+          <Typography
+            variant="body1"
+            align="center"
+            className={classes.venueName}
+          >
+            The Flatiron School
+          </Typography>
+          <Typography
+            variant="body1"
+            align="center"
+            className={classes.caption}
+          >
+            15 week immersive full-stack software engineering bootcamp.
+          </Typography>
+          <Typography variant="subtitle1" align="center">
+            Learned React, JavaScript, Ruby on Rails, OOP, and programmatic
+            thinking. Delivered 4 full-stack application projects. Worked
+            closely with instructors, devs, and fellow cohort members to deliver
+            clean and scalable code.
+          </Typography>
+        </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
@@ -119,13 +171,17 @@ const Resume = () => {
           >
             Business & Client Manager - New York, NY
           </Typography>
-          <Typography variant="body1" align="center">
+          <Typography
+            variant="body1"
+            align="center"
+            className={classes.venueName}
+          >
             286 Madison Dental
           </Typography>
           <Typography
             variant="body1"
             align="center"
-            style={{ fontStyle: "italic" }}
+            className={classes.caption}
           >
             Multi-specialty dental service organization with over 6,000 active
             clients.
@@ -156,13 +212,17 @@ const Resume = () => {
           >
             Product & Client Manager - NYC, Tel Aviv
           </Typography>
-          <Typography variant="body1" align="center">
+          <Typography
+            variant="body1"
+            align="center"
+            className={classes.venueName}
+          >
             Atlis Labs Inc.
           </Typography>
           <Typography
             variant="body1"
             align="center"
-            style={{ fontStyle: "italic" }}
+            className={classes.caption}
           >
             Online App Platform for real-time, personalized referrals for local
             business discovery.
@@ -192,13 +252,17 @@ const Resume = () => {
           >
             HEAD OF PRODUCT, Digital Dentistry - New Jersey
           </Typography>
-          <Typography variant="body1" align="center">
+          <Typography
+            variant="body1"
+            align="center"
+            className={classes.venueName}
+          >
             MIS Implants Technologies LTD
           </Typography>
           <Typography
             variant="body1"
             align="center"
-            style={{ fontStyle: "italic" }}
+            className={classes.caption}
           >
             Industry leader in 3-D printed dental technology (acquired for $375M
             in 2016).
@@ -235,7 +299,11 @@ const Resume = () => {
           >
             University Student - New York, NY
           </Typography>
-          <Typography variant="body1" align="center">
+          <Typography
+            variant="body1"
+            align="center"
+            className={classes.venueName}
+          >
             Fordham University
           </Typography>
           <Typography variant="subtitle1" align="center">

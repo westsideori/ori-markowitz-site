@@ -81,8 +81,16 @@ const NavBar = () => {
 
   const menuItemsList = menuItems.map((item, key) => {
     return (
-      <ListItem button key={key} component={Link} to={item.listPath}>
-        <ListItemIcon>{item.listIcon}</ListItemIcon>
+      <ListItem
+        button
+        key={key}
+        component={Link}
+        to={item.listPath}
+        style={{ color: "#00838f" }}
+      >
+        <ListItemIcon style={{ color: "#00838f" }}>
+          {item.listIcon}
+        </ListItemIcon>
         <ListItemText primary={item.listText} />
       </ListItem>
     );
@@ -94,7 +102,7 @@ const NavBar = () => {
       onClick={() => toggleSideBar(slider, false)}
     >
       <Avatar className={classes.avatar} src={avatar} alt="Avatar" />
-      <Divider />
+      <Divider style={{ backgroundColor: "#00838f" }} />
       <List>{menuItemsList}</List>
     </Box>
   );
@@ -103,7 +111,7 @@ const NavBar = () => {
     <>
       <div>
         <Box component="nav">
-          <AppBar position="static">
+          <AppBar position="static" style={{ backgroundColor: "#00bcd4" }}>
             <Drawer
               open={sideBarOpen.left}
               onClose={() => toggleSideBar("left", false)}

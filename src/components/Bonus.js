@@ -23,9 +23,18 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 345,
     margin: "5rem auto",
   },
+  projectTitle: {
+    color: "#006064",
+  },
+  linkColor: {
+    color: "#006064",
+    textDecoration: "none",
+  },
   heading: {
     padding: "3rem 0",
     textTransform: "uppercase",
+    color: "#006064",
+    fontWeight: "500",
   },
   modal: {
     display: "flex",
@@ -81,7 +90,11 @@ const Bonus = () => {
                 component="img"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  className={classes.projectTitle}
+                >
                   Launch Break
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
@@ -94,6 +107,7 @@ const Bonus = () => {
                 onClick={() => handleOpen("galaxy")}
                 size="small"
                 color="primary"
+                className={classes.linkColor}
               >
                 Watch
               </Button>
@@ -136,7 +150,11 @@ const Bonus = () => {
                 component="img"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  className={classes.projectTitle}
+                >
                   MGUIDE Product Interview
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
@@ -149,6 +167,7 @@ const Bonus = () => {
                 onClick={() => handleOpen("mis")}
                 size="small"
                 color="primary"
+                className={classes.linkColor}
               >
                 Watch
               </Button>
