@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ori-markowitz-site/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/ori-markowitz-site/static/js/main.792b2fca.chunk.js",
+    "main.js.map": "/ori-markowitz-site/static/js/main.792b2fca.chunk.js.map",
+    "runtime-main.js": "/ori-markowitz-site/static/js/runtime-main.51953d78.js",
+    "runtime-main.js.map": "/ori-markowitz-site/static/js/runtime-main.51953d78.js.map",
+    "static/js/2.6cea5721.chunk.js": "/ori-markowitz-site/static/js/2.6cea5721.chunk.js",
+    "static/js/2.6cea5721.chunk.js.map": "/ori-markowitz-site/static/js/2.6cea5721.chunk.js.map",
+    "index.html": "/ori-markowitz-site/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/ori-markowitz-site/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.6cea5721.chunk.js.LICENSE.txt": "/ori-markowitz-site/static/js/2.6cea5721.chunk.js.LICENSE.txt",
+    "static/media/daymakerthumb.dad0ff82.png": "/ori-markowitz-site/static/media/daymakerthumb.dad0ff82.png",
+    "static/media/galaxythumb.38629f89.png": "/ori-markowitz-site/static/media/galaxythumb.38629f89.png",
+    "static/media/isherpathumb.da22dd4f.png": "/ori-markowitz-site/static/media/isherpathumb.da22dd4f.png",
+    "static/media/misthumb.f489ec11.png": "/ori-markowitz-site/static/media/misthumb.f489ec11.png",
+    "static/media/oripic1.52c4376e.jpeg": "/ori-markowitz-site/static/media/oripic1.52c4376e.jpeg",
+    "static/media/rostermonsterthumb.abb2657f.png": "/ori-markowitz-site/static/media/rostermonsterthumb.abb2657f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.51953d78.js",
+    "static/js/2.6cea5721.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.792b2fca.chunk.js"
+  ]
+}
